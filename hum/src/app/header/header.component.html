@@ -1,1 +1,40 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand ml-5" href="#">
+    <img
+      src="assets/img/hum.png"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt=""
+    />
+  </a>
+  <div class="headerTitel">HUM Eventing</div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarText"
+    aria-controls="navbarText"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="btn btn-outline-warning mr-3 ml-5" routerLink="/ohne">Ohne</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-warning mr-3" routerLink="/16plus">16+</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-warning" routerLink="/18plus">18+</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <button class="btn btn-outline-success mr-3" type="button">Normal</button>
+      <button class="btn btn-outline-danger mr-5" type="button">FREE</button>
+    </form>
+  </div>
+</nav>
