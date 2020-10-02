@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand ml-5" routerLink="/">
+  <a class="navbar-brand ml-3" routerLink="/kasse">
     <img
       src="assets/img/hum.png"
       width="30"
@@ -8,7 +8,7 @@
       alt=""
     />
   </a>
-  <a class="headerTitel mr-3" routerLink="/">HUM Eventing</a>
+  <a class="headerTitel mr-3" routerLink="/kasse">HUM Eventing</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -22,9 +22,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <a class="btn btn-outline-warning mr-2" routerLink="/ohne">Ohne</a>
-      <a class="btn btn-outline-warning mr-2" routerLink="/16plus">16+</a>
-      <a class="btn btn-outline-warning mr-2" routerLink="/18plus">18+</a>
+      <a class="btn btn-outline-warning mr-2" (click)="openDrink('no')">Ohne</a>
+      <a class="btn btn-outline-warning mr-2" (click)="openDrink('mid')">16+</a>
+      <a class="btn btn-outline-warning mr-2" (click)="openDrink('all')">18+</a>
     </ul>
     <form class="form-inline">
       <a class="btn btn-outline-success mr-3" type="button">Normal</a>
